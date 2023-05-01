@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <link rel="stylesheet" type="text/css" href="index.css"> -->
+	<title>Bluesky Restaurant</title>
+	<style type="text/css">
+		*{
+		    margin: 0;
+		    padding: 0;
+		    box-sizing: border-box;
+		    scroll-behavior: smooth;
+		}
+		body
+		{
+		    width: 100%;
+		    height: 100%;
+		    margin: 0px;
+		    padding: 0px;
+		    font-family: 'Roboto Slab', serif;
+		    /*background-image: url(donation1.jpg);*/
+		}	
+		.navbar
+		{
+		    position: fixed;
+		    padding: 20px;
+		    background-color: #F8F8F8;
+		    color: #fff;
+		    display: flex;
+		    justify-content: space-between;
+		    width: 100%;
+		    /* height: 5%; */
+		    z-index: 1;
+		}
+		.menu
+		{
+		    width: 50%;
+		    /* position: relative;
+		    bottom: 22px; */
+		}
+		.menu h1
+		{
+		    padding-left: 20px;
+		    justify-content: center;
+		    color: black;
+		}
+		.menu1
+		{
+		    display: flex;
+		    justify-content: flex-end;
+		    padding-right: 50px;
+		    width: 50%;
+		    gap: 2em;
+		    list-style: none;
+		    font-size: 20px;
+		    align-items: center;
+		}
+		.nav-item li
+		{
+		    padding: 10px 16px;
+		}
+		.nav-item a 
+		{
+		    text-decoration: none;
+		    color: black;
+		}
+		.main
+		{
+			background-image: url(./f6.jpg);
+			background-repeat: no-repeat;
+		    background-size: cover;
+		    width: 100%;
+		    height: 100vh;
+		    z-index: 2;
+		}
+		.colorover
+		{
+		    width: 100%;
+		    height: 100vh;
+		    background: #000;
+		    opacity: 0.5;
+		}
+		.menu2
+		{
+		   position: absolute;
+		   top: 44%;
+		   left: 30%;
+		   background-color: black; 
+		   opacity: 0.6; 
+		   width: 500px;
+		   height: 165px;
+		   padding: 20px;
+		   box-shadow: 0px 0px 10px aliceblue;
+		}
+		.menu2 p
+		{
+		    position: relative;
+		    /* padding: 10px; */
+		    font-weight: bolder;
+		    text-align: center;
+		    color: white;
+		    font-size: xx-large;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div class="navbar">
+		<div class="menu">
+			<h1>Bluesky Restaurant</h1>
+		</div>
+		<ul class="menu1">
+			<li class="nav-item">
+				<a id="Home" href="#main">Home</a>
+			</li>
+			<li class="nav-item">
+				<a id="Home" href="./Menu.html">Menu</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="./registration.html">Login/Registration</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="./about.html">About</a>
+			</li>
+		</ul>
+	</div>
+	<div class="main" id="main">
+		<div class="colorover"></div>
+		<div class="menu2">
+			<p><i> <b>"I know once people get connected to real food, they never change back"</b></i></p>
+		</div>
+	</div>
+	</div>
+</body>
+
+</html>

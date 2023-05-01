@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Product Gallery</title>
+	<style type="text/css">
+		*{
+		    margin: 0;
+		    padding: 0;
+		    box-sizing: border-box;
+		    scroll-behavior: smooth;
+		}
+		body
+		{
+		    width: 100%;
+		    height: 100%;
+		    margin: 0px;
+		    padding: 0px;
+		    font-family: 'Roboto Slab', serif;
+		    /*background-image: url(donation1.jpg);*/
+		}	
+		.navbar
+		{
+		    position: fixed;
+		    padding: 20px;
+		    background-color: #F8F8F8;
+		    color: #fff;
+		    display: flex;
+		    justify-content: space-between;
+		    width: 100%;
+		    /* height: 5%; */
+		    z-index: 1;
+		}
+		.menu
+		{
+		    width: 50%;
+		    /* position: relative;
+		    bottom: 22px; */
+		}
+		.menu h1
+		{
+		    padding-left: 20px;
+		    justify-content: center;
+		    color: black;
+		}
+		.menu1
+		{
+		    display: flex;
+		    justify-content: flex-end;
+		    padding-right: 50px;
+		    width: 50%;
+		    gap: 2em;
+		    list-style: none;
+		    font-size: 20px;
+		    align-items: center;
+		}
+		.nav-item li
+		{
+		    padding: 10px 16px;
+		}
+		.nav-item a 
+		{
+		    text-decoration: none;
+		    color: black;
+		}
+		.Menu
+		{
+		    background-color: aliceblue;
+		    width: 100%;
+		    position: absolute;
+		    background-color: black;
+		    top: 10vh;
+		}
+		.Menu h1
+		{
+		    text-align: center;
+		    margin-top: 20px;
+		    padding-bottom: 10px;
+		    color: #fff;
+		}
+		.list
+		{
+		    width: 80%;
+		    left: 10%;
+		    padding-top: 10px;
+		    position: relative;
+		    border-radius: 5px;
+		    background-image: linear-gradient(to right top, #830c0c, #a94105, #c77100, #dea200, #ebd612);
+		    box-shadow: 0 0 20px #757575;
+		}
+		.list h2
+		{
+		    text-align: center;
+		    margin-bottom: 30px;
+		}
+		.items
+		{
+		    position: relative;
+		    padding: 5px;
+		    bottom: 20px;
+		    border-radius: 5px;
+		    background-color: #000;
+		    box-shadow: 0px 0px 15px 2px #000000;
+		}
+		.row1
+		{
+			display: flex;
+			justify-content: space-around;
+		    margin-bottom: 15px;
+		}
+		.items img
+		{
+		    width: 200px;
+		    height: 200px;
+		    border-radius: 100px;
+		}
+		.items p
+		{
+		    text-align: center;
+		    font-size: 25px;
+		    color: #fff;
+		    position: relative;
+		    /* bottom: 10px; */
+		}
+
+	</style>
+</head>
+<body>
+	<div class="navbar">
+		<div class="menu">
+			<h1>Bluesky Restaurant</h1>
+		</div>
+		<ul class="menu1">
+			<li class="nav-item">
+				<a id="Home" href="./index.html">Home</a>
+			</li>
+			<li class="nav-item">
+				<a id="Home" href="./Menu.html">Menu</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="./registration.html">Login/Registration</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="./about.html">About</a>
+			</li>
+		</ul>
+	</div>
+	<div class="Menu" id="Menu">
+		<h1>Menu Card</h1>
+		<div class="list">
+			<h2>Breakfast</h2>
+			<div class="row1">
+				<div class="items">
+					<img src="./Poha.jpg">
+					<p>Poha</p>
+					<p>Price :-20RS</p>
+				</div>
+				<div class="items">
+					<img src="./Tea.jpg">
+					<p>Tea</p>
+					<p>Price :-10RS</p>
+				</div>
+				<div class="items">
+					<img src="./uppuma.jpg">
+					<p>uppuma</p>
+					<p>Price :-20RS</p>
+				</div>
+			</div>
+			<div class="row1">
+				<div class="items">
+					<img src="./vadapav.jpg">
+					<p>Vada Pava</p>
+					<p>Price :-10RS</p>
+				</div>
+				<div class="items">
+					<img src="./idli.jpg">
+					<p>idli</p>
+					<p>Price :-20RS</p>
+				</div>
+				<div class="items">
+					<img src="./dosa.jpg">
+					<p>Dosa</p>
+					<p>Price :-25RS</p>
+				</div>
+			</div>
+			<h2>Lunch/Dinner</h2>
+			<div class="row1">
+				<div class="items">
+					<img src="./Paneer.jpg">
+					<p>Paneer</p>
+					<p>Price :-180RS</p>
+				</div>
+				<div class="items">
+					<img src="./Roti.jpg">
+					<p>Roti</p>
+					<p>Price :-15RS</p>
+				</div>
+				<div class="items">
+					<img src="./plain_rice.jpg">
+					<p>Plain Rice</p>
+					<p>Price :-65RS</p>
+				</div>
+			</div>
+			<div class="row1">
+				<div class="items">
+					<img src="./pav_bhaji.jpg">
+					<p>Pav Bhaji</p>
+					<p>Price :-80RS</p>
+				</div>
+				<div class="items">
+					<img src="./fried_rice.jpg">
+					<p>Fried Rice</p>
+					<p>Price :-75RS</p>
+				</div>
+				<div class="items">
+					<img src="./rajma_chawal.jpg">
+					<p>Rajma Chawal</p>
+					<p>Price :-110RS</p>
+				</div>
+			</div>
+		</div>
+
+</body>
+</html>
